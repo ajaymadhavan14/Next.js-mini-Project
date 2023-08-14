@@ -10,6 +10,7 @@ async function toggleTodo(id: string, complete: boolean) {
   "use server";
 
   await prisma.todo.update({ where: { id }, data: { complete } });
+  console.log(toggleTodo);
 }
 
 export default async function Home() {

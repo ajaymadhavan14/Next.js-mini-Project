@@ -8,6 +8,8 @@ type TodoItemProps = {
 };
 
 export function TodoItem({ id, title, complete, toggleTodo }: TodoItemProps) {
+  console.log(toggleTodo);
+
   return (
     <li className="flex gap-1 items-center">
       <input
